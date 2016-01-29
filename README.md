@@ -16,7 +16,7 @@ The objective  of the game is to be the first player to move their pawn to any s
 • Walls are flat two-space-wide pieces which can be placed in grooves that run between spaces.
 • There are a total of 20 walls which are divided evenly between the number of players playing the game.
 
-Info about Quoridor:
+### Info about Quoridor:
 • Quoridor was designed by Mirko Marchesi and published by Gigamic Games in 1997 and Great American Trading Co in 1998.
 • Quoridor received the Mensa Mind Game award in 1997, which is an annual award given by American Mensa since 1990 to five board games that are "original, challenging, and well designed".
 • Quoridor won Games magazine Game of the Year in 1998.
