@@ -1,4 +1,4 @@
-#Alt-H1 Quoridor
+# Quoridor
 My Project is a 2 or 4 player abstract strategy board game.
 The objective  of the game is to be the first player to move their pawn to any space on the opposite side of the game board from which it begins.
 
