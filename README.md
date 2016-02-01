@@ -9,6 +9,8 @@ The objective  of the game is to be the first player to move their pawn to any s
 4. When placing a barrier, a player must always leave a way to reach the end of the board for their opponents. Thus, one cannot box in another player on their first three moves.
 5. Walls can be placed directly between two spaces in any grove, **not** already occupied by a wall. Walls can be placed either vertically or horizontally, however a wall may not be placed where it cuts off the only remaining path of any pawn to the side of the board it must reach to win the game.
 6. Pawns can be moved to an adjacent space (not diagonally), or, if adjacent to another pawn, a player may jump over that pawn. A player may move diagonally if jumping over another pawn will result in running into a wall. Players may not jump over walls.
+7. Walls can be dragged and dropped from the side of the board to be placed into play.
+8. Pawns can be moved by dragging your pawn to the desired position.
 
 
 
