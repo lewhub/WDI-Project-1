@@ -1,1 +1,42 @@
-
+#grid div {
+  width: 75px;
+  height: 75px;
+  border: 2px solid black;
+  display: inline-block;
+  margin-right: 8px;
+  margin-top: 4px;
+}
+#grid {
+  text-align: center;
+  margin-right: 20px;
+}
+#pawn-one {
+  height: 65px;
+  width: 43px;
+  display: block;
+  position: absolute;
+  vertical-align: middle;
+  margin-left: 15px;
+  margin-top: 6px;
+}
+#pawn-two {
+  height: 63px;
+  width: 40px;
+  display: block;
+  position: absolute;
+  vertical-align: middle;
+  margin-left: 16px;
+  margin-top: 6px;
+}
+.turn-red {
+  background-color: red;
+}
+.turn-purple {
+  background-color: purple;
+}
+.turn-yellow {
+  background-color: yellow;
+}
+.turn-green {
+  background-color: green;
+}
