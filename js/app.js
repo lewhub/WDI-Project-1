@@ -281,21 +281,6 @@ allSquares.on('drop', function(event, ui){
     $(this).addClass('contains-white-pawn')
     divOfWhitePawn = grid.children('.contains-white-pawn').index()
 
-    // if ($(grid.children()[divOfWhitePawn - 1]).droppable('option', 'disabled')) {
-    //   console.log('this is good kinda white pawn')
-    //   $(grid.children()[divOfWhitePawn - 1]).droppable('option', 'disabled', true)
-    // } else if ($(grid.children()[divOfWhitePawn + 1]).droppable('option', 'disabled')) {
-    //     console.log('this is good kinda white pawn')
-    //     $(grid.children()[divOfWhitePawn + 1]).droppable('option', 'disabled', true)
-    //   } else  if ($(grid.children()[divOfWhitePawn - 10]).droppable('option', 'disabled')) {
-    //       console.log('this is good kinda white pawn')
-    //       $(grid.children()[divOfWhitePawn - 10]).droppable('option', 'disabled', true)
-    //     }  else if ($(grid.children()[divOfWhitePawn + 10]).droppable('option', 'disabled')) {
-    //         console.log('this is good kinda white pawn')
-    //         $(grid.children()[divOfWhitePawn + 10]).droppable('option', 'disabled', true)
-    //       }
-
-
     // $(grid.children()[divOfWhitePawn]).droppable('option', 'disabled', true)
 
     $(grid.children()[divOfWhitePawn]).droppable('option', 'disabled', true)

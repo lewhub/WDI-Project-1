@@ -174,7 +174,8 @@ text-align: center;
 #drop-down {
   margin-left: 6px;
   margin-bottom: 10px;
-  font-size: 30px;
+  /*font-size: 30px;*/
+  font-size: 20px;
   font-family: Courier, monospace;
   font-weight: bold;
 
@@ -182,7 +183,8 @@ text-align: center;
 }
 #barrier-submit {
   margin-left: 10px;
-  font-size: 60px;
+  /*font-size: 60px;*/
+  font-size: 34px;
   font-family: Courier, monospace;
   font-weight: bold;
 }
