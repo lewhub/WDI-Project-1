@@ -13,6 +13,8 @@ var restartButton = $('#restart')
 var winnerScreenWhitePawn = $('#winner-screen-white-pawn')
 var restartButtonWhitePawn = $('#restart-white-pawn')
 
+var work = 0
+
 restartButton.on('click', function(){
   location.reload();
 })
@@ -195,6 +197,7 @@ allSquares.on('dropover', function(event,ui){
   } else {
   if ((event.target === grid.children()[divOfWhitePawn + 1]) || (event.target === grid.children()[divOfWhitePawn - 1]) || (event.target === grid.children()[divOfWhitePawn - 10]) || (event.target === grid.children()[divOfWhitePawn + 10])) {
     //console.log(event.target)
+
     if ($(grid.children()[divOfWhitePawn]).css('border-top-color') !== 'rgb(73, 49, 28)') {
       console.log('barrier uptop ahead white pawn!!!')
       $(grid.children()[divOfWhitePawn - 10]).droppable('option', 'disabled', 'true')
@@ -387,13 +390,13 @@ barrierSubmit.on('click', function(){
       if (playerTwoTurn) {
         playerTwoBarriers -= 1
         blackPawnWallCount.html(playerTwoBarriers)
-        //playerTwoTurn = false
-        // currentPlayerTurn.html('White Pawn')
+        playerTwoTurn = false
+        currentPlayerTurn.html('White Pawn')
       } else {
         playerOneBarriers -= 1
         whitePawnWallCount.html(playerOneBarriers)
-        //playerTwoTurn = true
-        // currentPlayerTurn.html('Black Pawn')
+        playerTwoTurn = true
+        currentPlayerTurn.html('Black Pawn')
       }
       barrierLog.push(inputFromUser)
       //console.log(inputArray)
