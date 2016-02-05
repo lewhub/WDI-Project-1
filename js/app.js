@@ -7,6 +7,9 @@ var intructions = $('#intructions')
 var intructionScreen = $('#instruction-screen')
 var closeButton = $('#close')
 
+whitePawn.css({'-webkit-user-select': 'none'})
+blackPawn.css({'-webkit-user-select': 'none'})
+
 var whitePawnWallCount = $('#white-pawn-wall-num')
 var blackPawnWallCount = $('#black-pawn-wall-num')
 var currentPlayerTurn = $('#current-player-turn')
@@ -95,6 +98,13 @@ var charsToIndex = {
 var barrierInput = $('#barrier-input')
 var barrierSubmit= $('#barrier-submit')
 var dropDown = $('#drop-down')
+
+barrierInput.on('keypress', function(event){
+  if (event.which === 13) {
+    event.preventDefault()
+
+  }
+})
 
 for (var i = 0; i < 81; i += 1) {
   if (i % 9 === 0) {

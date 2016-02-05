@@ -12,6 +12,8 @@
   /*margin: -19px 20px;*/
   margin: -23px 20px;
   display: inline-block;
+  -webkit-user-select: none;
+  -moz-user-select: none;
 }
 #white-pawn {
   height: 65px;
@@ -75,12 +77,15 @@ body {
   display: flex;
   justify-content: center;
   margin-right: 44px;
-
   margin-top: -8px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
 }
 #vertical-nums {
   width: 10px;
   margin-left: 36px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
 }
 
 #player-one-wall-count {
@@ -88,12 +93,15 @@ body {
   font-size: 28px;
   font-family: Courier, monospace;
   margin-bottom: 10px;
-
+  -webkit-user-select: none;
+  -moz-user-select: none;
 }
 #player-two-wall-count {
   color: #CC1100;
   font-size: 28px;
   font-family: Courier, monospace;
+  -webkit-user-select: none;
+  -moz-user-select: none;
 }
 p {
   display: inline;
@@ -105,6 +113,8 @@ h2 {
   font-weight: lighter;
   margin-top: 11px;
   margin-bottom: -4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
 }
 #winner-screen {
   background-color: #EEE9E9;
@@ -146,6 +156,8 @@ h2 {
   right: 0;
   font-family: Courier, monospace;
   color: #330000;
+  -webkit-user-select: none;
+  -moz-user-select: none;
 }
 #close {
 
@@ -179,25 +191,30 @@ h2 {
   right: 0;
   font-family: Courier, monospace;
   color: #330000;
+  -webkit-user-select: none;
+  -moz-user-select: none;
 }
 #form-grid {
   position: absolute;
   top: 5px;
   left: 5px;
   width: 21%;
+
 }
 #barrier-input {
-display: block;
-width: 100px;
-height: 100px;
-margin-left: 4px;
-margin-bottom: 10px;
-border: 10px groove #49311c;
-background-color: #802A2A;
-font-size: 60px;
-font-family: Courier, monospace;
-font-weight: bold;
-text-align: center;
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin-left: 4px;
+  margin-bottom: 10px;
+  border: 10px groove #49311c;
+  background-color: #802A2A;
+  font-size: 60px;
+  font-family: Courier, monospace;
+  font-weight: bold;
+  text-align: center;
+  -webkit-user-select: none;
+  outline: none;
 }
 #drop-down {
   margin-left: 6px;
@@ -206,7 +223,8 @@ text-align: center;
   font-size: 20px;
   font-family: Courier, monospace;
   font-weight: bold;
-
+  -webkit-user-select: none;
+  -moz-user-select: none;
 
 }
 #barrier-submit {
