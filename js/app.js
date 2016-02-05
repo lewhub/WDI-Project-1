@@ -13,8 +13,6 @@ var restartButton = $('#restart')
 var winnerScreenWhitePawn = $('#winner-screen-white-pawn')
 var restartButtonWhitePawn = $('#restart-white-pawn')
 
-var work = 0
-
 restartButton.on('click', function(){
   location.reload();
 })
