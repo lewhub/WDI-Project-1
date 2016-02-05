@@ -58,8 +58,18 @@
     </select>
   <input id='barrier-input' type='text' placeholder='a1'>
   <input id="barrier-submit" type='button' value='Place On Board'>
+  <input id="intructions" type='button' value='Instructions'>
   </form>
 
+  <div id='instruction-screen'>Quoridor <br>1. Players can only move their pawn one square at a time.<br> 2. Player have two choices when it's their turn: either move their pawn or place a barrier on the board to make it difficult for their opponent/opponents to reach their destination.<br>
+  3. For a two person game, each player has access to 10 barriers (walls). In a four player game, each player has access to 5 walls each.<br>
+  4. When placing a barrier, a player must always leave a way to reach the end of the board for their opponents. Thus, one cannot box in another player on their first three moves.<br>
+  5. Walls can be placed directly between two spaces in any grove, not already occupied by a wall. Walls can be placed either vertically or horizontally, <br>however a wall may not be placed where it cuts off the only remaining path of any pawn to the side of the board it must reach to win the game.
+  6. Pawns can be moved to an adjacent space (not diagonally), or, if adjacent to another pawn,<br> a player may jump over that pawn. A player may move diagonally if jumping over another pawn will result in running into a wall. Players may not jump over walls.<br>
+  7. Walls can be dragged and dropped from the side of the board to be placed into play.<br>
+  8. Pawns can be moved by dragging your pawn to the desired position.<br>
+  9. Vertical walls are placed by typing in a letter and number (ex. a1, f5) into the text field, and selecting vertical from the drop down menu. Vertical walls are placed on the right side of the inputed square and the right side of the square directly above the inputed square (input: a1. output: a1,a2).<br>
+  10. Horizontal walls are placed by typing in a letter and number (ex. a1, f5) into the text field, and selecting horizontal from the drop down menu. <br>Horizontal walls are placed on the top of the inputed square and the top of the square directly to the right of the inputed square (ex. input: a1. output: a1, b1). <p id='close'>Close</p></div>
   <div id='winner-screen'>Black Pawn Wins!! <p id='restart'>Restart</p></div>
   <div id='winner-screen-white-pawn'>White Pawn Wins!! <p id='restart-white-pawn'>Restart</p></div>
 

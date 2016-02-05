@@ -12,6 +12,8 @@ The objective  of the game is to be the first player to move their pawn to any s
 6. Pawns can be moved to an adjacent space (not diagonally), or, if adjacent to another pawn, a player may jump over that pawn. A player may move diagonally if jumping over another pawn will result in running into a wall. Players may not jump over walls.
 7. Walls can be dragged and dropped from the side of the board to be placed into play.
 8. Pawns can be moved by dragging your pawn to the desired position.
+9. Vertical walls are placed by typing in a letter and number (ex. a1, f5) into the text field, and selecting vertical from the drop down menu. Vertical walls are placed on the right side of the inputed square and the right side of the square directly above the inputed square (input: a1. output: a1,a2).
+10. Horizontal walls are placed by typing in a letter and number (ex. a1, f5) into the text field, and selecting horizontal from the drop down menu. Horizontal walls are placed on the top of the inputed square and the top of the square directly to the right of the inputed square (ex. input: a1. output: a1, b1).
 
 
 
@@ -30,6 +32,18 @@ Wall **A** is **legal**. Wall **B** is **illegal** because the wall does **not**
 * Walls are flat two-space-wide pieces which can be placed in grooves that run between spaces.
 
 * There are a total of 20 walls which are divided evenly between the number of players playing the game.
+
+## Technologies/Frameworks
+* Javascript
+
+* jQuery
+
+* jQuery UI
+
+* HTML
+
+* CSS
+
 
 ### Info about Quoridor:
 * Quoridor was designed by Mirko Marchesi and published by Gigamic Games in 1997 and Great American Trading Co in 1998.

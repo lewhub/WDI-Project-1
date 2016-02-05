@@ -3,6 +3,9 @@ var whitePawn = $('#white-pawn')
 var blackPawn = $('#black-pawn')
 var playerTwoTurn = false
 var gameIsOver = false
+var intructions = $('#intructions')
+var intructionScreen = $('#instruction-screen')
+var closeButton = $('#close')
 
 var whitePawnWallCount = $('#white-pawn-wall-num')
 var blackPawnWallCount = $('#black-pawn-wall-num')
@@ -18,6 +21,15 @@ restartButton.on('click', function(){
 })
 restartButtonWhitePawn.on('click', function(){
   location.reload();
+})
+
+intructions.on('click', function(){
+  intructionScreen.css({opacity: 0.9})
+  intructionScreen.show(2000)
+})
+closeButton.on('click', function(){
+  intructionScreen.css({opacity: 1.0})
+  intructionScreen.hide(800)
 })
 
 var inputArray = []
