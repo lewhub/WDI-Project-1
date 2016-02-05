@@ -1,16 +1,19 @@
 #grid div {
   width: 75px;
   height: 75px;
-  border: 2px solid black;
+  border: 10px groove #49311c;
   display: inline-block;
-  margin-right: 8px;
-  margin-top: 4px;
+  margin-right: 6px;
+  margin-top: 3px;
+  background-color: #802A2A;
 }
 #grid {
   text-align: center;
-  margin-right: 20px;
+  /*margin: -19px 20px;*/
+  margin: -23px 20px;
+  display: inline-block;
 }
-#pawn-one {
+#white-pawn {
   height: 65px;
   width: 43px;
   display: block;
@@ -19,7 +22,7 @@
   margin-left: 15px;
   margin-top: 6px;
 }
-#pawn-two {
+#black-pawn {
   height: 63px;
   width: 40px;
   display: block;
@@ -28,15 +31,158 @@
   margin-left: 16px;
   margin-top: 6px;
 }
-.turn-red {
-  background-color: red;
+body {
+  background-color: #3A3A38;
 }
-.turn-purple {
-  background-color: purple;
+
+.contains-white-pawn {
+  background-color: #330000 !important;
 }
-.turn-yellow {
-  background-color: yellow;
+.contains-black-pawn {
+  background-color: #330000 !important;
 }
-.turn-green {
-  background-color: green;
+
+.char-ref {
+  display: inline;
+  /*margin-left: 22px;
+  margin-right: 26px;*/
+  margin-left: 35px;
+  margin-right: 50px;
+  /*color: #802A2A;
+  font-size: 90px;*/
+  color: black;
+  font-size: 28px;
+  font-family: Courier, monospace;
+  font-weight: bold;
+
+
+}
+.num-ref {
+  text-align: right;
+  /*color: #802A2A;*/
+  color: black;
+  font-size: 90px;
+  font-family: Courier, monospace;
+  float: right;
+  font-weight: lighter;
+}
+.container {
+  display: flex;
+  justify-content: center;
+}
+#horizontal-chars {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-right: 44px;
+
+  margin-top: -8px;
+}
+#vertical-nums {
+  width: 10px;
+  margin-left: 36px;
+}
+
+#player-one-wall-count {
+  color: #CC1100;
+  font-size: 28px;
+  font-family: Courier, monospace;
+  margin-bottom: 10px;
+
+}
+#player-two-wall-count {
+  color: #CC1100;
+  font-size: 28px;
+  font-family: Courier, monospace;
+}
+p {
+  display: inline;
+}
+h2 {
+  color: #CC1100;
+  font-size: 28px;
+  font-family: Courier, monospace;
+  font-weight: lighter;
+  margin-top: 11px;
+  margin-bottom: -4px;
+}
+#winner-screen {
+  background-color: #EEE9E9;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  line-height: 770px;
+  font-size: 126px;
+  text-align: center;
+  font-family: Courier, monospace;
+  color: #8E2323;
+  display: none;
+}
+#restart {
+  top: 0;
+  left: 0;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  font-family: Courier, monospace;
+  color: #330000;
+}
+#winner-screen-white-pawn {
+  background-color: #EEE9E9;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  line-height: 770px;
+  font-size: 126px;
+  text-align: center;
+  font-family: Courier, monospace;
+  color: #8E2323;
+  display: none;
+}
+#restart-white-pawn {
+  top: 0;
+  left: 0;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  font-family: Courier, monospace;
+  color: #330000;
+}
+#form-grid {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 21%;
+}
+#barrier-input {
+display: block;
+width: 100px;
+height: 100px;
+margin-left: 4px;
+margin-bottom: 10px;
+border: 10px groove #49311c;
+background-color: #802A2A;
+font-size: 60px;
+font-family: Courier, monospace;
+font-weight: bold;
+text-align: center;
+}
+#drop-down {
+  margin-left: 6px;
+  margin-bottom: 10px;
+  font-size: 30px;
+  font-family: Courier, monospace;
+  font-weight: bold;
+
+
+}
+#barrier-submit {
+  margin-left: 10px;
+  font-size: 60px;
+  font-family: Courier, monospace;
+  font-weight: bold;
 }
