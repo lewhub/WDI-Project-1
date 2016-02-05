@@ -364,11 +364,13 @@ barrierSubmit.on('click', function(){
         blackPawnWallCount.html(playerTwoBarriers)
         playerTwoTurn = false
         currentPlayerTurn.html('White Pawn')
-      } else {
+
+      } else if (!playerTwoTurn) {
         playerOneBarriers -= 1
         whitePawnWallCount.html(playerOneBarriers)
         playerTwoTurn = true
-        currentPlayerTurn.html('Black Pawn')
+         currentPlayerTurn.html('Black Pawn')
+
       }
       barrierLog.push(inputFromUser)
       //console.log(inputArray)
@@ -385,13 +387,13 @@ barrierSubmit.on('click', function(){
       if (playerTwoTurn) {
         playerTwoBarriers -= 1
         blackPawnWallCount.html(playerTwoBarriers)
-        playerTwoTurn = false
-        currentPlayerTurn.html('White Pawn')
+        //playerTwoTurn = false
+        // currentPlayerTurn.html('White Pawn')
       } else {
         playerOneBarriers -= 1
         whitePawnWallCount.html(playerOneBarriers)
-        playerTwoTurn = true
-        currentPlayerTurn.html('Black Pawn')
+        //playerTwoTurn = true
+        // currentPlayerTurn.html('Black Pawn')
       }
       barrierLog.push(inputFromUser)
       //console.log(inputArray)
