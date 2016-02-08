@@ -146,19 +146,19 @@ blackPawn.draggable(pawnDragOptions)
 
 whitePawn.on('dragstart', function(event, ui) {
   if (!gameIsOver) {
-    console.log('started dragging the white pawn')
+    //console.log('started dragging the white pawn')
     $(this).parent().removeClass('contains-white-pawn')
   } else if(!gameIsOver) {
-    console.log('it is not white pawn\'s turn. player two turn =', playerTwoTurn)
+    //console.log('it is not white pawn\'s turn. player two turn =', playerTwoTurn)
   }
 })
 
 blackPawn.on('dragstart', function(event, ui) {
   if (!gameIsOver) {
-    console.log('started dragging the black pawn')
+    //console.log('started dragging the black pawn')
     $(this).parent().removeClass('contains-black-pawn')
   } else if (!gameIsOver) {
-    console.log('it is not black pawn\'s turn. player two turn =', playerTwoTurn)
+    //console.log('it is not black pawn\'s turn. player two turn =', playerTwoTurn)
   }
 
 })
@@ -169,40 +169,40 @@ allSquares.on('dropover', function(event,ui){
     if ((event.target === grid.children()[divOfBlackPawn + 1]) || (event.target === grid.children()[divOfBlackPawn - 1]) || (event.target === grid.children()[divOfBlackPawn - 10]) || (event.target === grid.children()[divOfBlackPawn + 10])) {
       //console.log(event.target)
       if ($(grid.children()[divOfBlackPawn]).css('border-top-color') !== 'rgb(73, 49, 28)') {
-        console.log('barrier uptop black pawn ahead black pawn!!!')
+        //console.log('barrier uptop black pawn ahead black pawn!!!')
         $(grid.children()[divOfBlackPawn - 10]).droppable('option', 'disabled', 'true')
         if ($(grid.children()[divOfBlackPawn + 10]).css('border-top-color') !== 'rgb(73, 49, 28)') {
-          console.log('barrier onbottom below watch out black pawn!!!')
+          //console.log('barrier onbottom below watch out black pawn!!!')
           $(grid.children()[divOfBlackPawn + 10]).droppable('option', 'disabled', 'true')
         }
         if ($(grid.children()[divOfBlackPawn]).css('border-right-color') !== 'rgb(73, 49, 28)') {
-          console.log('barrier to the right ahead watch out black pawn!!!')
+          //console.log('barrier to the right ahead watch out black pawn!!!')
           $(grid.children()[divOfBlackPawn + 1]).droppable('option', 'disabled', 'true')
         }
         if ($(grid.children()[divOfBlackPawn - 1]).css('border-right-color') !== 'rgb(73, 49, 28)') {
-          console.log('barrier to the left behind you watch out black pawn!!!')
+          //console.log('barrier to the left behind you watch out black pawn!!!')
           $(grid.children()[divOfBlackPawn - 1]).droppable('option', 'disabled', 'true')
         }
       } else if ($(grid.children()[divOfBlackPawn]).css('border-right-color') !== 'rgb(73, 49, 28)') {
-        console.log('barrier to the right ahead watch out black pawn!!!')
+        //console.log('barrier to the right ahead watch out black pawn!!!')
         $(grid.children()[divOfBlackPawn + 1]).droppable('option', 'disabled', 'true')
         if ($(grid.children()[divOfBlackPawn - 1]).css('border-right-color') !== 'rgb(73, 49, 28)') {
-          console.log('barrier to the left behind you watch out black pawn!!!')
+          //console.log('barrier to the left behind you watch out black pawn!!!')
           $(grid.children()[divOfBlackPawn - 1]).droppable('option', 'disabled', 'true')
         }
         if ($(grid.children()[divOfBlackPawn + 10]).css('border-top-color') !== 'rgb(73, 49, 28)') {
-          console.log('barrier onbottom below watch out black pawn look out!!!')
+          //console.log('barrier onbottom below watch out black pawn look out!!!')
           $(grid.children()[divOfBlackPawn + 10]).droppable('option', 'disabled', 'true')
         }
       } else if ($(grid.children()[divOfBlackPawn + 10]).css('border-top-color') !== 'rgb(73, 49, 28)') {
-        console.log('barrier onbottom below watch out black pawn look out!!!')
+        //console.log('barrier onbottom below watch out black pawn look out!!!')
         $(grid.children()[divOfBlackPawn + 10]).droppable('option', 'disabled', 'true')
         if ($(grid.children()[divOfBlackPawn - 1]).css('border-right-color') !== 'rgb(73, 49, 28)') {
-          console.log('barrier to the left behind you watch out black pawn!!!')
+          //console.log('barrier to the left behind you watch out black pawn!!!')
           $(grid.children()[divOfBlackPawn - 1]).droppable('option', 'disabled', 'true')
         }
       } else if ($(grid.children()[divOfBlackPawn - 1]).css('border-right-color') !== 'rgb(73, 49, 28)') {
-        console.log('barrier to the left behind you watch out!!!')
+        //console.log('barrier to the left behind you watch out!!!')
         $(grid.children()[divOfBlackPawn - 1]).droppable('option', 'disabled', 'true')
       }
       //console.log(grid.children()[divOfBlackPawn])
@@ -214,53 +214,54 @@ allSquares.on('dropover', function(event,ui){
       //console.log(event.target)
       $(this).droppable('option', 'disabled', 'true')
     }
-  } else {
+  } else if (!playerTwoTurn) {
   if ((event.target === grid.children()[divOfWhitePawn + 1]) || (event.target === grid.children()[divOfWhitePawn - 1]) || (event.target === grid.children()[divOfWhitePawn - 10]) || (event.target === grid.children()[divOfWhitePawn + 10])) {
     //console.log(event.target)
 
     if ($(grid.children()[divOfWhitePawn]).css('border-top-color') !== 'rgb(73, 49, 28)') {
-      console.log('barrier uptop ahead white pawn!!!')
+      //console.log('barrier uptop ahead white pawn!!!')
       $(grid.children()[divOfWhitePawn - 10]).droppable('option', 'disabled', 'true')
       if ($(grid.children()[divOfWhitePawn + 10]).css('border-top-color') !== 'rgb(73, 49, 28)') {
-        console.log('barrier onbottom below watch out white pawn!!!')
+        //console.log('barrier onbottom below watch out white pawn!!!')
         $(grid.children()[divOfWhitePawn + 10]).droppable('option', 'disabled', 'true')
       }
       if ($(grid.children()[divOfWhitePawn - 1]).css('border-right-color') !== 'rgb(73, 49, 28)') {
-        console.log('barrier to the left behind you watch out white pawn!!!')
+        //console.log('barrier to the left behind you watch out white pawn!!!')
         $(grid.children()[divOfWhitePawn - 1]).droppable('option', 'disabled', 'true')
       }
       if ($(grid.children()[divOfWhitePawn]).css('border-right-color') !== 'rgb(73, 49, 28)') {
-        console.log('barrier to the right ahead!!!')
+        //console.log('barrier to the right ahead!!!')
         $(grid.children()[divOfWhitePawn + 1]).droppable('option', 'disabled', 'true')
       }
     } else if ($(grid.children()[divOfWhitePawn]).css('border-right-color') !== 'rgb(73, 49, 28)') {
-      console.log('barrier to the right ahead!!!')
+      //console.log('barrier to the right ahead!!!')
       $(grid.children()[divOfWhitePawn + 1]).droppable('option', 'disabled', 'true')
       if ($(grid.children()[divOfWhitePawn - 1]).css('border-right-color') !== 'rgb(73, 49, 28)') {
-        console.log('barrier to the left behind you watch out white pawn!!!')
+        //console.log('barrier to the left behind you watch out white pawn!!!')
         $(grid.children()[divOfWhitePawn - 1]).droppable('option', 'disabled', 'true')
       }
       if ($(grid.children()[divOfWhitePawn + 10]).css('border-top-color') !== 'rgb(73, 49, 28)') {
-       console.log($(grid.children()[divOfWhitePawn]).css('border-top-color'))
-       console.log('barrier onbottom below watch out white pawn!!!')
+       //console.log($(grid.children()[divOfWhitePawn]).css('border-top-color'))
+       //console.log('barrier onbottom below watch out white pawn!!!')
        $(grid.children()[divOfWhitePawn + 10]).droppable('option', 'disabled', 'true')
      }
     } else if ($(grid.children()[divOfWhitePawn + 10]).css('border-top-color') !== 'rgb(73, 49, 28)') {
-      console.log($(grid.children()[divOfWhitePawn]).css('border-top-color'))
-      console.log('barrier onbottom below watch out white pawn!!!')
+      //console.log($(grid.children()[divOfWhitePawn]).css('border-top-color'))
+      //console.log('barrier onbottom below watch out white pawn!!!')
       $(grid.children()[divOfWhitePawn + 10]).droppable('option', 'disabled', 'true')
       if ($(grid.children()[divOfWhitePawn - 1]).css('border-right-color') !== 'rgb(73, 49, 28)') {
-        console.log('barrier to the left behind you watch out white pawn!!!')
+        //console.log('barrier to the left behind you watch out white pawn!!!')
         $(grid.children()[divOfWhitePawn - 1]).droppable('option', 'disabled', 'true')
       }
     } else if ($(grid.children()[divOfWhitePawn - 1]).css('border-right-color') !== 'rgb(73, 49, 28)') {
-      console.log('barrier to the left behind you watch out white pawn!!!')
+      //console.log('barrier to the left behind you watch out white pawn!!!')
       $(grid.children()[divOfWhitePawn - 1]).droppable('option', 'disabled', 'true')
     }
     else {
 
       $(this).droppable('option', 'enable', 'true')
     }
+
 
   } else {
     //console.log(event.target)
@@ -318,14 +319,8 @@ allSquares.on('drop', function(event, ui){
     if ($(grid.children()[divOfWhitePawn + 1]).prop('nodeName') === 'DIV') {
       $(grid.children()[divOfWhitePawn + 1]).droppable('option', 'disabled', false)
     }
-    //console.log(this)
     playerTwoTurn = true
     currentPlayerTurn.html('Black Pawn')
-    // trying to fix drag on white pawn when it's black pawn's turn
-    // whitePawn.draggable('option', 'disabled', 'true')
-    // blackPawn.draggable('option', 'enable', 'true')
-    // blackPawn.draggable('option', 'disabled', 'false')
-    //console.log('dropped white pawn!!!!!')
  }
   checkForWinner()
 })
@@ -373,8 +368,8 @@ barrierSubmit.on('click', function(){
     inputArray = [inputFromUser, dropDown.val()]
     // console.log(objTest[inputFromUser])
     if (inputArray[1] === 'veritcal' && !barrierLogVerticalPlusOne.includes(inputArray[0])) {
-      console.log('vertical selected')
-      console.log(inputFromUser)
+      //console.log('vertical selected')
+      //console.log(inputFromUser)
       var topDivNum = charsToIndex[inputFromUser] - 10
       var currDiv = grid.children()[charsToIndex[inputArray[0]]]
       var topDiv = grid.children()[topDivNum]
@@ -398,8 +393,8 @@ barrierSubmit.on('click', function(){
       barrierLog.push(inputFromUser)
       //console.log(inputArray)
     } else if (inputArray[1] === 'horizontal' && !barrierLogHorizontalPlusNine.includes(inputArray[0])) {
-      console.log('horizontal selected')
-      console.log(inputFromUser)
+      //console.log('horizontal selected')
+      //console.log(inputFromUser)
       var rightDivNum = charsToIndex[inputFromUser] + 1
       var currDiv = grid.children()[charsToIndex[inputArray[0]]]
       var rightDiv = grid.children()[rightDivNum]
