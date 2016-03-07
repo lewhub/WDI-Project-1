@@ -284,7 +284,7 @@ allSquares.on('drop', function(event, ui){
 
     $(grid.children()[divOfBlackPawn + 10]).droppable('option', 'disabled', false)
     $(grid.children()[divOfBlackPawn - 10]).droppable('option', 'disabled', false)
-    $(grid.children()[divOfBlackPawn -1]).prop('nodeName')
+    $(grid.children()[divOfBlackPawn - 1]).prop('nodeName')
     $(grid.children()[divOfBlackPawn + 1]).prop('nodeName')
     if ($(grid.children()[divOfBlackPawn - 1]).prop('nodeName') === 'DIV') {
       $(grid.children()[divOfBlackPawn - 1]).droppable('option', 'disabled', false)

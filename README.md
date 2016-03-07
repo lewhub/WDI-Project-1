@@ -44,6 +44,9 @@ Wall **A** is **legal**. Wall **B** is **illegal** because the wall does **not**
 
 * CSS
 
+* User Stories:
+* Link to Trello Board - https://trello.com/b/TtV8mafw
+
 
 ### Info about Quoridor:
 * Quoridor was designed by Mirko Marchesi and published by Gigamic Games in 1997 and Great American Trading Co in 1998.
