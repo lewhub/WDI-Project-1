@@ -44,8 +44,8 @@ Wall **A** is **legal**. Wall **B** is **illegal** because the wall does **not**
 
 * CSS
 
-* User Stories:
-* Link to Trello Board - https://trello.com/b/TtV8mafw
+# User Stories:
+# Link to Trello Board - https://trello.com/b/TtV8mafw
 
 
 ### Info about Quoridor:
